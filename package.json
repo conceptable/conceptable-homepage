@@ -1,0 +1,26 @@
+{
+  "name": "conceptable-homepage",
+  "version": "1.0.0",
+  "description": "Conceptable Homepage",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist/*",
+    "prebuild": "npm run clean && mkdir -p dist/assets",
+    "build": "npm run build:views && npm run copy:images && npm run copy:css && npm run copy:fonts && npm run copy:js",
+    "build:views": "node build-content.js | mustache - views/index.mustache > dist/index.html",
+    "copy:images": "cp -r images dist/images",
+    "copy:css": "cp -r assets/css dist/assets/css",
+    "copy:fonts": "cp -r assets/fonts dist/assets/fonts",
+    "copy:js": "cp -r assets/js dist/assets/js",
+    "prewatch": "mkdir -p dist/assets",
+    "watch": "nodemon -e md,mustache --exec \"npm run build:views\""
+  },
+  "dependencies": {
+    "@octokit/rest": "^15.9.4",
+    "mustache": "^2.3.0",
+    "showdown": "^1.8.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.1"
+  }
+}
