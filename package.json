@@ -16,7 +16,6 @@
     "watch": "nodemon -e md,mustache --exec \"npm run build:views\""
   },
   "dependencies": {
-    "@octokit/rest": "^15.9.4",
     "mustache": "^2.3.0",
     "showdown": "^1.8.6"
   },
