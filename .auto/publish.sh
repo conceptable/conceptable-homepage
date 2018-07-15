@@ -1,7 +1,7 @@
 #! /bin/bash -eu
 
-git config user.name $CD_GIT_AGENT_NAME
-git config user.email $CD_GIT_AGENT_EMAIL
+# git config user.name $CD_GIT_AGENT_NAME
+# git config user.email $CD_GIT_AGENT_EMAIL
 
 echo "Cloning repository"
 git clone --single-branch git@github.com:conceptable/conceptable.github.io.git tmp
