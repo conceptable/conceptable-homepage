@@ -6,12 +6,9 @@
   "scripts": {
     "clean": "rm -rf dist/*",
     "prebuild": "npm run clean && mkdir -p dist/assets",
-    "build": "npm run build:views && npm run copy:images && npm run copy:css && npm run copy:fonts && npm run copy:js",
+    "build": "npm run build:views && npm run copy:static",
     "build:views": "node build-content.js | mustache - views/index.mustache > dist/index.html",
-    "copy:images": "cp -r images dist/images",
-    "copy:css": "cp -r assets/css dist/assets/css",
-    "copy:fonts": "cp -r assets/fonts dist/assets/fonts",
-    "copy:js": "cp -r assets/js dist/assets/js",
+    "copy:static": "cp -r images dist/images && cp -r assets dist",
     "prewatch": "mkdir -p dist/assets",
     "watch": "nodemon -e md,mustache --exec \"npm run build:views\""
   },
