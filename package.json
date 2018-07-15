@@ -10,7 +10,7 @@
     "build:views": "node build-content.js | mustache - views/index.mustache > dist/index.html",
     "copy:static": "cp -r images dist/images && cp -r assets dist",
     "prewatch": "mkdir -p dist/assets",
-    "watch": "nodemon -e md,mustache --exec \"npm run build:views\""
+    "watch": "nodemon -i dist/ -e js,css,md,mustache -x \"npm run build\""
   },
   "dependencies": {
     "mustache": "^2.3.0",

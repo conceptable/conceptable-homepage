@@ -1,0 +1,35 @@
+@import url(main.css);
+
+#banner .mission-statement {
+  margin-bottom: 3em;
+}
+
+#banner .mission-statement h1 {
+  margin-bottom: 0.4em;
+}
+
+#banner .service-items {
+  -moz-flex-wrap: nowrap;
+	-webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+#banner .service-item {
+  flex: 1 1 0;
+}
+
+#banner .service-item h3 {
+  margin-bottom: 0.5em;
+}
+
+#banner .service-item ul {
+  list-style-type: none;
+  margin-bottom: 1em;
+  padding-left: 0;
+}
+
+#banner .service-item ul li {
+  margin: 0.5em 0;
+  padding-left: 0;
+}
