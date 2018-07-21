@@ -14,7 +14,7 @@ const noPTagAroundImgTag = {
 // configure showdown
 showdown.setFlavor('github');
 showdown.setOption('noHeaderId', true);
-const converter = new showdown.Converter({extensions: [noPTagAroundImgTag]});
+const converter = new showdown.Converter();
 
 // read content file names
 const markdowns = fs.readdirSync('./content').filter(f => f.endsWith('.md'));

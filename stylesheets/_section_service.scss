@@ -47,7 +47,39 @@
 
     @media screen and (min-width: 600px) {
       border-bottom: solid 0 #cccccc;
-      width: 27vw;
+      width: 25vw;
+      padding: 20px 0;
+
+      p:first-child {
+        height: 100px;
+        position: relative;
+      }
+
+      &:nth-child(1) img {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        height: 71px;
+        width: auto;
+      }
+
+      &:nth-child(2) img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 81px;
+        width: auto;
+      }
+
+      &:nth-child(3) img {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        right: 0;
+        height: 75px;
+        width: auto;
+      }
     }
   }
 }

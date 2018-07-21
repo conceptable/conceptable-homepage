@@ -20,19 +20,23 @@
     }
   }
 
-  .customer-logos {
+  ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: 40px;
+      align-self: center;
+    }
 
     img {
-      margin-bottom: 40px;
       max-height: 50px;
       max-width: 125px;
-      // max-width: 40vw;
-      height: auto;
-      align-self: center;
     }
 
     @media screen and (min-width: 600px) {
@@ -41,7 +45,7 @@
       align-content: flex-start;
       margin-left: 20px;
 
-      img {
+      li {
         margin: 0 15px 40px 15px;
       }
     }
