@@ -1,0 +1,49 @@
+.our-customers {
+  @extend %section-content;
+  background-color: #fff;
+  color: #4a4a4a;
+
+  .customer-list {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 600px) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+  }
+
+  .description {
+    @media screen and (min-width: 600px) {
+      flex-grow: 1;
+    }
+  }
+
+  .customer-logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    img {
+      margin-bottom: 40px;
+      max-height: 50px;
+      max-width: 125px;
+      // max-width: 40vw;
+      height: auto;
+      align-self: center;
+    }
+
+    @media screen and (min-width: 600px) {
+      flex-grow: 2;
+      justify-content: center;
+      align-content: flex-start;
+      margin-left: 20px;
+
+      img {
+        margin: 0 15px 40px 15px;
+      }
+    }
+  }
+}

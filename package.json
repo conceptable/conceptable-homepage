@@ -6,14 +6,21 @@
   "scripts": {
     "clean": "rm -rf dist/*",
     "prebuild": "npm run clean && mkdir -p dist/assets",
-    "build": "npm run build:views && npm run copy:static",
+    "build": "npm run build:views && npm run build:css && npm run copy:static",
     "build:views": "node build-content.js | mustache - views/index.mustache > dist/index.html",
+    "build:css": "node-sass stylesheets/style.scss -x -o dist/ --output-style expanded --sourcemap=none && postcss dist/style.css --use autoprefixer -d dist/",
     "copy:static": "cp -r images dist/images && cp -r assets dist",
     "prewatch": "mkdir -p dist/assets",
-    "watch": "nodemon -i dist/ -e js,css,md,mustache -x \"npm run build\""
+    "watch": "nodemon -i dist/ -e scss,md,mustache -x \"npm run build\"",
+    "watch:views": "nodemon -i dist/ -e md,mustache -x \"npm run build:views\"",
+    "watch:css": "nodemon -i dist/ -e scss -x \"npm run build:css\""
   },
   "dependencies": {
+    "autoprefixer": "^9.0.0",
     "mustache": "^2.3.0",
+    "node-sass": "^4.9.2",
+    "postcss": "^7.0.1",
+    "postcss-cli": "^6.0.0",
     "showdown": "^1.8.6"
   },
   "devDependencies": {

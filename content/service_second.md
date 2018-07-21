@@ -1,4 +1,4 @@
-<span class="icon fa-car"></span>
+![Design and Develop](images/design.png)
 
 ### Design and Develop
 

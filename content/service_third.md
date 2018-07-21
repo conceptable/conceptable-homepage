@@ -1,4 +1,4 @@
-<span class="icon fa-car"></span>
+![Monitor and Optimise](images/monitor.png)
 
 ### Monitor and Optimise
 

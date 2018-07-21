@@ -4,99 +4,81 @@
 		<title>Conceptable</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/home.css" />
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
+    <header class="hero">
+      <nav class="brand-menu">
+        <a href="https://www.conceptable.net">
+          <img src="images/conceptable_logo.png">
+        </a>
+      </nav>
+      <div class="mission-statement">
+        {{ &mission_statement }}
+      </div>
+    </header>
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<div class="logo"><img src="images/conceptable_logo.png"></div>
-				</div>
-			</header>
+    <section class="our-services">
+      <header>
+        {{ &service_heading }}
+      </header>
+      <div class="service-list">
+        <article class="service-desc">{{ &service_first }}</article>
+        <article class="service-desc">{{ &service_second }}</article>
+        <article class="service-desc">{{ &service_third }}</article>
+      </div>
+    </section>
 
-		<!-- Banner -->
-			<section id="banner">
-				<div class="inner">
-					<header class="mission-statement">
-						{{ &mission_statement }}
-					</header>
-					<div class="flex service-items">
-						<div class="service-item">{{ &service_first }}</div>
-						<div class="service-item">{{ &service_second }}</div>
-						<div class="service-item">{{ &service_third }}</div>
-					</div>
-				</div>
-			</section>
+    <section class="our-customers">
+      <header>
+        {{ &customer_heading }}
+      </header>
+      <div class="customer-list">
+        <div class="description">
+          {{ &customer_desc }}
+        </div>
+        <div class="customer-logos">
+          {{ &customer_logos }}
+        </div>
+      </div>
+    </section>
 
-		<!-- Three -->
-			<section id="three" class="wrapper align-center customers">
-				<div class="inner">
-					<div class="flex flex-2">
-						<article class="customer">{{ &customer_next_digital }}</article>
-						<article class="customer">{{ &customer_eat_and_travel }}</article>
-						<article class="customer">{{ &customer_etpress }}</article>
-						<article class="customer">{{ &customer_gammon }}</article>
-					</div>
-				</div>
-			</section>
+    <div class="about-and-contact-us">
+      <section class="about-us">
+        <header>
+          {{ &about_us_heading }}
+        </header>
+        <div class="description">
+          {{ &about_us_desc }}
+        </div>
+      </section>
 
-			<!-- Four -->
-			<section id="four" class="wrapper align-center">
-				<div class="inner">
-					<div class="flex flex-2">
-						<article>
-							<div class="image round">
-								<img src="images/weather.jpg" alt="Hong Kong Weather" />
-							</div>
-							<header>
-								{{ &product_hk_weather_title }}
-							</header>
-							  {{ &product_hk_weather_description }}
-							<footer>
-								<a href="https://itunes.apple.com/hk/app/hong-kong-weather/id286262858?l=en&mt=8" class="button">Download App</a>
-							</footer>
-						</article>
-					</div>
-				</div>
-			</section>
+      <section class="contact-us">
+        <header>
+          {{ &contact_us_heading }}
+        </header>
+        <form class="form" action="https://formspree.io/enquiry@conceptable.net" method="post">
+          <div class="form-group">
+            <label for="name">Contact</label>
+            <input name="name" type="text">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input name="email" type="email">
+          </div>
+          <div class="form-group">
+            <label for="message">Enquiry</label>
+            <textarea name="message" rows="6"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Send Enquiry</button>
+          </div>
+        </form>
+      </section>
+    </div>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-
-					<h3>Get in touch</h3>
-
-					<form action="https://formspree.io/enquiry@conceptable.net" method="post">
-						<div class="field half first">
-							<label for="name">Contact</label>
-							<input name="name" type="text" placeholder="Your name">
-						</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<input name="email" type="email" placeholder="Your email">
-						</div>
-						<div class="field">
-							<label for="message">Enquiry</label>
-							<textarea name="message" rows="6" placeholder="Message to us"></textarea>
-						</div>
-						<ul class="actions">
-							<li><input value="Send Enquiry" class="button alt" type="submit"></li>
-						</ul>
-					</form>
-
-					<div class="copyright">
-						&copy; Conceptable 2018
-					</div>
-
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+    <footer class="copyright">
+      {{ &copyright }}
+    </footer>
 	</body>
 </html>

@@ -1,4 +1,4 @@
-<span class="icon fa-car"></span>
+![Consult and Research](images/research.png)
 
 ### Consult and Research
 

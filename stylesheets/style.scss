@@ -1,0 +1,29 @@
+@import "reset";
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600";
+
+body {
+  background-color: #7674b5;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+@import 'section_common';
+@import 'section_hero';
+@import 'section_service';
+@import 'section_customer';
+@import 'section_about_us';
+
+.copyright {
+  @extend %section-content;
+  background-color: #7674b5;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+
+  a {
+    color: #fff;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+}

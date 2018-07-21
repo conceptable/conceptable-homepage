@@ -2,10 +2,19 @@ const fs = require('fs');
 const path = require('path');
 const showdown = require('showdown');
 
+const noPTagAroundImgTag = {
+  type: 'output',
+  filter: function(text, converter) {
+    text = text.replace(/<p><img/ig, '<img');
+    text = text.replace(/ \/><\/p>/ig, ' />');
+    return text;
+  }
+};
+
 // configure showdown
 showdown.setFlavor('github');
 showdown.setOption('noHeaderId', true);
-const converter = new showdown.Converter();
+const converter = new showdown.Converter({extensions: [noPTagAroundImgTag]});
 
 // read content file names
 const markdowns = fs.readdirSync('./content').filter(f => f.endsWith('.md'));

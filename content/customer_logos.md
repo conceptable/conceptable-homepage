@@ -1,0 +1,8 @@
+![Eat and Travel Weekly](images/etw.png)
+![Next Digital](images/nextdigital.png)
+![ETPress](images/etpress.png)
+![GAMMON CONSTRUCTION](images/gammon.png)
+![Spikes Asia](images/spikeasia.png)
+![Medecins Sans Frontieres](images/msf.png)
+![Haymarket](images/haymarket.png)
+![Infiniti](images/infiniti.png)

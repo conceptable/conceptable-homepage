@@ -1,0 +1,31 @@
+%section-content {
+  padding: 65px 0 45px 0;
+
+  > * {
+    margin: 0 32px;
+  }
+
+  > header {
+    margin-bottom: 1.5em;
+
+    h2 {
+      font-size: 38px;
+      font-weight: 600;
+    }
+  }
+
+  .description {
+    margin-bottom: 60px;
+    font-size: 18px;
+
+    p {
+      margin-bottom: 1em;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    > * {
+      margin: 0 10vw;
+    }
+  }
+}
