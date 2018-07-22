@@ -8,7 +8,7 @@
     "prebuild": "npm run clean && mkdir -p dist/assets",
     "build": "npm run build:views && npm run build:css && npm run copy:static",
     "build:views": "node build-content.js | mustache - views/index.mustache > dist/index.html",
-    "build:css": "node-sass --output-style compressed -x -o dist/ stylesheets/style.scss && postcss dist/style.css --use autoprefixer -d dist/",
+    "build:css": "node-sass --output-style expanded --omit-source-map-url stylesheets/style.scss dist/style.css && postcss dist/style.css --use autoprefixer --no-map -d dist/",
     "copy:static": "cp -r images dist/images && cp -r assets dist",
     "prewatch": "mkdir -p dist/assets",
     "watch": "nodemon -i dist/ -e scss,md,mustache -x \"npm run build\"",
