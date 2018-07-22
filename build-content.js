@@ -2,15 +2,6 @@ const fs = require('fs');
 const path = require('path');
 const showdown = require('showdown');
 
-const noPTagAroundImgTag = {
-  type: 'output',
-  filter: function(text, converter) {
-    text = text.replace(/<p><img/ig, '<img');
-    text = text.replace(/ \/><\/p>/ig, ' />');
-    return text;
-  }
-};
-
 // configure showdown
 showdown.setFlavor('github');
 showdown.setOption('noHeaderId', true);
