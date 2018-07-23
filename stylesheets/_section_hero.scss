@@ -21,8 +21,16 @@
 }
 
 .brand-menu {
-  padding: 40px 0 17px 0;
+  padding: 38px 0 19px 0;
   border-bottom: solid 1px #979797;
+
+  .conceptable-logo {
+    height: 27px;
+  }
+
+  @media screen and (min-width: 600px) {
+    padding: 38px 0 26px 0;
+  }
 }
 
 .mission-statement {
