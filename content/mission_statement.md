@@ -1,3 +1,3 @@
-# Bring Mobile Idea into Life
+# Invent Mobile Apps That Make Life Better
 
-We help you to connect with customer with idea and technology.
+Collaborate with us to elevate your app ideas.
