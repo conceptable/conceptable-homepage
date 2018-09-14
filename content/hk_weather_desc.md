@@ -1,0 +1,1 @@
+Hong Kong Weather accesses the data from Hong Kong Observatory and Environmental Protection Department, tells you the current Hong Kong weather with more frequent update and more accurate data.
