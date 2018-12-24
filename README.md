@@ -51,11 +51,13 @@ Update `/images` or `/assets` accordingly. Commit and push the changes.
 
 ## Local development
 
-In order to see live preview and chnages locally, you need to setup your local machine as follows.
+In order to see live preview and changes locally, you need to setup your local machine as follows.
 
 ### Prerequisite
 
 - Node.js v8.9.4
+
+run `npm install` to install the requires package
 
 ### Package the webpage
 

@@ -1,0 +1,1 @@
+Enjoy Movie provides all Hong Kong cinema information, and the latest ticket sales, Enjoy Movie makes it easy for you to find your favorite movies. Available for [iOS](https://itunes.apple.com/app/apple-store/id295613985?pt=19300&ct=Conceptable%20Home&mt=8) and [web](https://enjoymovie.net).
