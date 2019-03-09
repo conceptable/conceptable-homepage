@@ -1,1 +1,1 @@
-Hong Kong Weather accesses the data from Hong Kong Observatory and Environmental Protection Department, tells you the current Hong Kong weather with more frequent update and more accurate data.
+Hong Kong Weather accesses the data from Hong Kong Observatory and Environmental Protection Department, tells you the current Hong Kong weather with more frequent update and more accurate data. Available for [iOS](https://itunes.apple.com/app/apple-store/id286262858?pt=19300&ct=conceptable_web_link&mt=8) and [hkweather.net](https://hkweather.net).
